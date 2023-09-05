@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-image: url('/public/glassesImage/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  margin: 0;
+  color: white;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+
+  /* GlassesList */
+.glasses-list {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+
+/* Display the Model */
+.model-display {
+  position: relative;
+  width: 50vw;
+}
+
+/* position the glasses over the model's eyes */
+.glasses-overlay {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  width: 40%; 
+  height: auto;
+  opacity: 0.7;
+}
+
+
